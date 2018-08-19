@@ -1,0 +1,21 @@
+<div class="col-md-12 whiteBox">
+  Welcome, {{id}}. Click <a href="javascript:void(0);" (click)="logout()">here</a> if you wish to logout.
+  <hr>
+  <div>Today is: {{today | date:'dd/MM/yy'}}</div>
+</div>
+<div class="col-md-12 whiteBox">
+<table>
+
+<tr>
+  <th>Name</th>
+  <th>Author</th>
+  <th>Price</th>
+</tr>
+<tr *ngFor="let book of booklist">
+  <td>{{book.name}}</td>
+  <td>{{book.author}}</td>
+  <td>{{book.price}}</td>
+</tr>
+</table>
+</div>
+
